@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(240, 240, 240, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  flex-basis: 38%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em 3em 2.5em 3em;
+}
+
+#submit {
+  display: inline;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+.input label,
+#day,
+#month,
+#year {
+  text-transform: uppercase;
+}
+
+.input-holder {
+  display: flex;
+  margin-bottom: 2.5em;
+}
+
+.input input {
+  display: block;
+  border: 1px solid hsl(0, 0%, 86%);
+  width: 3.8em;
+  height: 1.7em;
+  padding: 0.2em;
+  padding-left: 0.6em;
+  margin: 0 1em 0 0;
+  border-radius: 8%;
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+}
+
+.input label {
+  color: hsl(0, 1%, 44%);
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+.red-text {
+  color: hsl(0, 100%, 67%) !important;
+}
+
+.red {
+  border: 1px solid hsl(0, 100%, 67%) !important;
+}
+
+.input span {
+  font-size: 12px;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+}
+
+.output {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.output h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.output h1 span {
+  color: hsl(259, 100%, 65%);
+}
+
+#submit {
+  /* background-image: url("./images/icon-arrow.svg"); */
+
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+
+  /* background-position: center; */
+  background-color: hsl(259, 100%, 65%);
+  width: 5em;
+  height: 5em;
+  /* padding: 2em; */
+  border-radius: 50%;
+  border: none;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+.hr {
+  display: inline;
+  /* flex-basis: auto; */
+  /* flex-shrink: 5; */
+}
+
+.hr hr {
+  height: 1px;
+  border: none;
+  background-color: hsl(0, 0%, 86%);
+}
+
+#submit {
+  display: inline;
+  /* flex-basis: auto; */
+  /* align-self: center; */
+  /* flex-shrink: 1; */
+  float: right;
+  margin-top: -45px;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: hidden; /* Hide vertical overflow */
+  }
+
+  .card {
+    flex-basis: 65%;
+    width: 80%;
+    height: 45%;
+    padding: 2.2em 2em 1.5em 2em;
+  }
+
+  .input-holder {
+    justify-content: center;
+    margin-bottom: 3em;
+  }
+
+  .input input {
+    width: 5em;
+    height: 2.5em;
+    padding: 0.1em;
+    padding-left: 0.6em;
+    margin: 0 1em 0 0;
+    border-radius: 8%;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+  }
+
+  .input span {
+    font-size: 8px;
+  }
+
+  .input label {
+    color: hsl(0, 1%, 44%);
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+
+  .output {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.2em;
+  }
+
+  .output h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+
+  .output h1 span {
+    color: hsl(259, 100%, 65%);
+  }
+
+  #submit img {
+    width: 60%;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* flex-basis: 50%; */
+  }
+
+  #submit {
+    /* background-image: url("./images/icon-arrow.svg"); */
+
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+
+    /* background-position: center; */
+    background-color: hsl(259, 100%, 65%);
+    width: 5em;
+    height: 5em;
+    /* padding: 2em; */
+    border-radius: 50%;
+    border: none;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+  }
+
+  .submit-area {
+    margin-bottom: 1em;
+  }
+
+  .hr hr {
+    height: 1px;
+    border: none;
+    background-color: hsl(0, 0%, 86%);
+    margin-top: 5px;
+  }
+
+  #submit {
+    display: inline;
+    /* flex-basis: auto; */
+    /* align-self: center; */
+    /* flex-shrink: 1; */
+    /* float: center; */
+    float: none;
+    margin: auto;
+    margin-top: -40px;
+    margin-left: 38%;
+  }
+}
